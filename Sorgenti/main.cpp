@@ -2,8 +2,8 @@
  * Name:      	main.cpp
  * Purpose:   	Implements simple wxWidgets application with GUI
  * 				created using wxFormBuilder.
- * Author:    
- * Created:   
+ * Author:    	Sala Carlo
+ * Created:   	10/03/2019
  * Copyright: 
  * License:   	wxWidgets license (www.wxwidgets.org)
  * 
