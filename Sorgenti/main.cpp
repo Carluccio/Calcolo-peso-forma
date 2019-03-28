@@ -2,8 +2,8 @@
  * Name:      	main.cpp
  * Purpose:   	Implements simple wxWidgets application with GUI
  * 				created using wxFormBuilder.
- * Author:    	Sala Carlo
- * Created:   	10/03/2019
+ * Author:    
+ * Created:   
  * Copyright: 
  * License:   	wxWidgets license (www.wxwidgets.org)
  * 
@@ -36,7 +36,7 @@ bool MainApp::OnInit()
 
 MainFrame::MainFrame(wxWindow *parent) : MainFrameBase( parent )
 {
-SetIcon(wxICON(iconFrame));
+SetIcon(wxICON(sample));
 }
 
 MainFrame::~MainFrame()
@@ -59,8 +59,8 @@ void MainFrame::OnClickCalcola(wxCommandEvent& event)
 	variabile=(atof(m_textCtrl1->GetValue()+"."+ m_textCtrl2->GetValue()))/100;
 	pesoAttuale= atof(m_textCtrl3->GetValue()+"."+ m_textCtrl4->GetValue());
     if(variabile > 2.50 || variabile <  1.00 || pesoAttuale > 280 || pesoAttuale < 7) {
-		wxMessageBox("Valori non ammessi !!",
-		             "Avviso", wxOK | wxICON_EXCLAMATION);
+		wxMessageBox (_T("Valori non ammessi !!"),
+		             _T("Avviso"), wxOK | wxICON_EXCLAMATION);
 		variabile =0;
 		pesoAttuale = 0;
 	} else {
@@ -78,6 +78,5 @@ void MainFrame::OnClickCalcola(wxCommandEvent& event)
 
 void MainFrame::OnClickHelp(wxCommandEvent& event)
 {
-wxMessageBox(" Formula di Keys\n Uomini: (altezza in metri) x (altezza in metri) x 22.1\n Donne:  (altezza in metri) x (altezza in metri) x 20.6\n\n Nei risultati è usato il punto per i decimali !!\n Al di sotto o al di sopra di certi valori, il programma non è attendibile !!",
-	             "Precisazione ...", wxOK | wxICON_INFORMATION);
+wxMessageBox (_T(" Formula di Keys\n Uomini: (altezza in metri) x (altezza in metri) x 22.1\n Donne:  (altezza in metri) x (altezza in metri) x 20.6\n\n Nei risultati è usato il punto per i decimali !!\n Al di sotto o al di sopra di certi valori, il programma non è attendibile !!") ,_T("Precisazione ..."), wxOK | wxICON_INFORMATION);
 }

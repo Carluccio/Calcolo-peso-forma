@@ -37,7 +37,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxBoxSizer* bSizer3;
 	bSizer3 = new wxBoxSizer( wxVERTICAL );
 	
-	m_staticText1 = new wxStaticText( m_panel1, wxID_ANY, _("Secondo la formula di Keys"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE );
+	m_staticText1 = new wxStaticText( m_panel1, wxID_ANY, _T("Secondo la formula di Keys"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE );
 	m_staticText1->Wrap( -1 );
 	m_staticText1->SetFont(wxFontInfo(16).FaceName("Arial").Italic().Bold());
 	//m_staticText1->SetFont( wxFont( 16, 74, 93, 92, false, wxT("Arial") ) );
@@ -45,7 +45,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	bSizer3->Add( m_staticText1, 0, wxALL|wxEXPAND|wxLEFT|wxRIGHT, 5 );
 	
-	m_staticText2 = new wxStaticText( m_panel1, wxID_ANY, _("(Possibilità di inserire anche i decimali !!)"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE );
+	m_staticText2 = new wxStaticText( m_panel1, wxID_ANY, _T("(Possibilità di inserire anche i decimali !!)"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE );
 	m_staticText2->Wrap( -1 );
 	m_staticText2->SetFont(wxFontInfo(9).FaceName("Arial").Italic().Bold());
 	//m_staticText2->SetFont( wxFont( 9, 74, 93, 92, false, wxT("Arial") ) );
@@ -58,7 +58,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxBoxSizer* bSizer4;
 	bSizer4 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText3 = new wxStaticText( m_panel1, wxID_ANY, _("Altezza in cm.:"), wxDefaultPosition, wxSize(dpiz(122), -1), 0 );
+	m_staticText3 = new wxStaticText( m_panel1, wxID_ANY, _T("Altezza in cm.:"), wxDefaultPosition, wxSize(dpiz(122), -1), 0 );
 	m_staticText3->Wrap( -1 );
 	m_staticText3->SetFont(wxFontInfo(9).FaceName("Arial"));
 	bSizer4->Add( m_staticText3, 0, wxALL, 5 );
@@ -81,7 +81,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	bSizer4->Add( 60, 0, 0, wxEXPAND, 5 );
 	
-	m_radioBtn1 = new wxRadioButton( m_panel1, wxID_ANY, _("Maschio"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_radioBtn1 = new wxRadioButton( m_panel1, wxID_ANY, _T("Maschio"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_radioBtn1->SetValue( true ); 
 	bSizer4->Add( m_radioBtn1, 0, wxALL, 5 );
 	
@@ -91,7 +91,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxBoxSizer* bSizer6;
 	bSizer6 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText5 = new wxStaticText( m_panel1, wxID_ANY, _("Peso attuale in Kg.:"), wxDefaultPosition, wxSize(dpiz(122), -1), 0 );
+	m_staticText5 = new wxStaticText( m_panel1, wxID_ANY, _T("Peso attuale in Kg.:"), wxDefaultPosition, wxSize(dpiz(122), -1), 0 );
 	m_staticText5->Wrap( -1 );
 	m_staticText5->SetFont(wxFontInfo(9).FaceName("Arial"));
 	
@@ -115,7 +115,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	bSizer6->Add( 60, 0, 0, wxEXPAND, 5 );
 	
-	m_radioBtn2 = new wxRadioButton( m_panel1, wxID_ANY, _("Femmina"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_radioBtn2 = new wxRadioButton( m_panel1, wxID_ANY, _T("Femmina"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer6->Add( m_radioBtn2, 0, wxALL, 5 );
 	
 	
@@ -124,13 +124,13 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxBoxSizer* bSizer7;
 	bSizer7 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_button1 = new wxButton( m_panel1, wxID_ANY, _("Calcola !!"), wxDefaultPosition, wxSize(dpiz(122), -1), 0 );
+	m_button1 = new wxButton( m_panel1, wxID_ANY, _T("Calcola !!"), wxDefaultPosition, wxSize(dpiz(122), -1), 0 );
 	bSizer7->Add( m_button1, 0, wxLEFT, 5 );
 	
 	
 	bSizer7->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_button2 = new wxButton( m_panel1, wxID_ANY, _("?"), wxDefaultPosition, wxSize(dpiz(122), -1), 0 );
+	m_button2 = new wxButton( m_panel1, wxID_ANY, _T("?"), wxDefaultPosition, wxSize(dpiz(122), -1), 0 );
 	bSizer7->Add( m_button2, 0, wxRIGHT, 5 );
 	
 	
@@ -139,7 +139,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxBoxSizer* bSizer8;
 	bSizer8 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText7 = new wxStaticText( m_panel1, wxID_ANY, _("Il tuo peso forma è Kg.:"), wxDefaultPosition, wxSize(dpiz(258), -1), 0 );
+	m_staticText7 = new wxStaticText( m_panel1, wxID_ANY, _T("Il tuo peso forma è Kg.:"), wxDefaultPosition, wxSize(dpiz(258), -1), 0 );
 	m_staticText7->Wrap( -1 );
 	m_staticText7->SetFont(wxFontInfo(9).FaceName("Arial"));
 	bSizer8->Add( m_staticText7, 0, wxLEFT, 5 );
@@ -159,7 +159,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxBoxSizer* bSizer9;
 	bSizer9 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText9 = new wxStaticText( m_panel1, wxID_ANY, _("Differenza rispetto al tuo peso forma, Kg.:"), wxDefaultPosition, wxSize(dpiz(258), -1), 0 );
+	m_staticText9 = new wxStaticText( m_panel1, wxID_ANY, _T("Differenza rispetto al tuo peso forma, Kg.:"), wxDefaultPosition, wxSize(dpiz(258), -1), 0 );
 	m_staticText9->SetFont(wxFontInfo(9).FaceName("Arial").Bold());
 	m_staticText9->Wrap( -1 );
 		
@@ -181,7 +181,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	bSizer10 = new wxBoxSizer( wxVERTICAL );
 	bSizer10->Add( 0, 0, 1, wxEXPAND, 5 );
 	m_statusBar = this->CreateStatusBar( 1, wxST_SIZEGRIP, wxID_ANY );
-	m_hyperlink1 = new wxGenericHyperlinkCtrl( m_panel1, wxID_ANY, _("© Carlo Sala software"), wxT("https://www.carlosala.net/"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE );
+	m_hyperlink1 = new wxGenericHyperlinkCtrl( m_panel1, wxID_ANY, _T("© Carlo Sala software"), wxT("https://www.carlosala.net/"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE );
 	m_statusBar->PushStatusText(" V.: 3.0.0"); 
 	m_hyperlink1->SetHoverColour( wxColour( 32, 54, 210 ) );
 	m_hyperlink1->SetNormalColour( wxColour( 64, 64, 64 ) );
