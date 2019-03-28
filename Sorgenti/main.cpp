@@ -78,6 +78,6 @@ void MainFrame::OnClickCalcola(wxCommandEvent& event)
 
 void MainFrame::OnClickHelp(wxCommandEvent& event)
 {
-wxMessageBox(" Formula di Keys\n Uomini: (altezza in metri) x (altezza in metri) x 22.1\n Donne:  (altezza in metri) x (altezza in metri) x 20.6\n\n Nei risultati è usato il punto per i decimali !!\n Al di sotto o al di sopra di certi valori, il programma non è attendibile !!",
+wxMessageBox(" Formula di Keys\n Uomini: (altezza in metri) x (altezza in metri) x 22.1\n Donne:  (altezza in metri) x (altezza in metri) x 20.6\n\n Nei risultati Ã¨ usato il punto per i decimali !!\n Al di sotto o al di sopra di certi valori, il programma non Ã¨ attendibile !!",
 	             "Precisazione ...", wxOK | wxICON_INFORMATION);
 }

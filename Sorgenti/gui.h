@@ -76,8 +76,8 @@ class MainFrameBase : public wxFrame
 		//wxSize(390, 340) form
 		//wxSize(60, -1) campo altezza intero
 		//wxSize(35, -1) campo altezza decimali
-		//wxSize(122, -1) 1° e 2° static text
-		//wxSize(258, -1) 3° e 4° static text
+		//wxSize(122, -1) 1Â° e 2Â° static text
+		//wxSize(258, -1) 3Â° e 4Â° static text
 		//wxSize(122, -1) buttons
 		//wxSize(122, -1) campi risultati
 		virtual dpiz(int dxy) {return newDim->wxWindow::FromDIP(dxy);}

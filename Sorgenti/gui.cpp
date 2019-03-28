@@ -45,7 +45,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	bSizer3->Add( m_staticText1, 0, wxALL|wxEXPAND|wxLEFT|wxRIGHT, 5 );
 	
-	m_staticText2 = new wxStaticText( m_panel1, wxID_ANY, _("(Possibilità di inserire anche i decimali !!)"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE );
+	m_staticText2 = new wxStaticText( m_panel1, wxID_ANY, _("(PossibilitÃ  di inserire anche i decimali !!)"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE );
 	m_staticText2->Wrap( -1 );
 	m_staticText2->SetFont(wxFontInfo(9).FaceName("Arial").Italic().Bold());
 	//m_staticText2->SetFont( wxFont( 9, 74, 93, 92, false, wxT("Arial") ) );
@@ -139,7 +139,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	wxBoxSizer* bSizer8;
 	bSizer8 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText7 = new wxStaticText( m_panel1, wxID_ANY, _("Il tuo peso forma è Kg.:"), wxDefaultPosition, wxSize(dpiz(258), -1), 0 );
+	m_staticText7 = new wxStaticText( m_panel1, wxID_ANY, _("Il tuo peso forma Ã¨ Kg.:"), wxDefaultPosition, wxSize(dpiz(258), -1), 0 );
 	m_staticText7->Wrap( -1 );
 	m_staticText7->SetFont(wxFontInfo(9).FaceName("Arial"));
 	bSizer8->Add( m_staticText7, 0, wxLEFT, 5 );
@@ -181,7 +181,7 @@ MainFrameBase::MainFrameBase( wxWindow* parent, wxWindowID id, const wxString& t
 	bSizer10 = new wxBoxSizer( wxVERTICAL );
 	bSizer10->Add( 0, 0, 1, wxEXPAND, 5 );
 	m_statusBar = this->CreateStatusBar( 1, wxST_SIZEGRIP, wxID_ANY );
-	m_hyperlink1 = new wxGenericHyperlinkCtrl( m_panel1, wxID_ANY, _("© Carlo Sala software"), wxT("https://www.carlosala.net/"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE );
+	m_hyperlink1 = new wxGenericHyperlinkCtrl( m_panel1, wxID_ANY, _("Â© Carlo Sala software"), wxT("https://www.carlosala.net/"), wxDefaultPosition, wxDefaultSize, wxHL_DEFAULT_STYLE );
 	m_statusBar->PushStatusText(" V.: 3.0.0"); 
 	m_hyperlink1->SetHoverColour( wxColour( 32, 54, 210 ) );
 	m_hyperlink1->SetNormalColour( wxColour( 64, 64, 64 ) );
